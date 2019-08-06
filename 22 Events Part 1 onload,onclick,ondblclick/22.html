@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>javascript Syntax</title>
+        <style>
+        </style>
+         <script>
+            /*
+                after loaded all the compent of the page this section is work 
+            */
+            window.onload = function(){
+                document.getElementById("test").innerHTML = "Text From JavaScript From Onload method";
+            }
+            window.onclick = function (){
+                document.getElementById("test").innerHTML = "Text From JavaScript From Onclick Method";
+            }
+            window.ondblclick = function (){
+                document.getElementById("test").innerHTML = "Text From JavaScript From Ondblclick Method";
+            }
+        </script>
+    </head>
+    <body>
+    	<div id="test"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
